@@ -43,32 +43,3 @@ def dijkstra(n: int, edges: list[list[int]], src: int) -> dict:
                 mydict[edge[1]] = mydict[now] + edge[2]  
 
     return mydict
-
-
-# EXAMPLES TO UNCOMMENT AND CHECK
-
-# EDGES IN FORMAT [u, v, w] 
-# u is the source vertex 
-# v is the destination vertex
-# w is the weight of the edge
-
-
-# n=5
-# edges=[[0,1,10],[0,2,3],[1,3,2],[2,1,4],[2,3,8],[2,4,2],[3,4,5]]
-# src=0
-
-
-# n=4
-# edges=[[0,1,3],[1,2,8],[2,3,4],[3,0,2]]
-# src=0
-
-n=3
-edges=[[0,1,4]]
-src=0
-
-# n=5
-# edges=[[0,1,10],[0,2,3],[1,3,2],[2,1,4],[2,3,8],[2,4,2],[3,4,5]]
-# src=4
-
-
-print(dijkstra(n, edges, src))
